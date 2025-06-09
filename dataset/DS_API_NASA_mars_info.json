@@ -1,0 +1,15 @@
+{
+	"name": "DS_API_NASA_mars_info",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_API_key_vault",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DS_NASA_work"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
