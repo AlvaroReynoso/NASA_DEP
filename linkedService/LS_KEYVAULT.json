@@ -1,0 +1,11 @@
+{
+	"name": "LS_KEYVAULT",
+	"properties": {
+		"description": "conexion al valor de la NASA_API",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://migrupodellaves.vault.azure.net/"
+		}
+	}
+}
