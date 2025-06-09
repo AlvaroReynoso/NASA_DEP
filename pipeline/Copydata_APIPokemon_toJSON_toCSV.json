@@ -1,0 +1,368 @@
+{
+	"name": "Copydata_APIPokemon_toJSON_toCSV",
+	"properties": {
+		"activities": [
+			{
+				"name": "copydata_charizard_JSON",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "APIPokemon_Get_charizard",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET",
+						"paginationRules": {
+							"supportRFC5988": "true"
+						}
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
+					"logSettings": {
+						"enableCopyActivityLog": true,
+						"copyActivityLogSettings": {
+							"logLevel": "Warning",
+							"enableReliableLogging": false
+						},
+						"logLocationSettings": {
+							"linkedServiceName": {
+								"referenceName": "AzureBlobStorage1",
+								"type": "LinkedServiceReference"
+							}
+						}
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['abilities'][0]['ability']['name']"
+								},
+								"sink": {
+									"path": "nombreHabilidad"
+								}
+							},
+							{
+								"source": {
+									"path": "$['forms'][0]['name']"
+								},
+								"sink": {
+									"path": "Nombre"
+								}
+							},
+							{
+								"source": {
+									"path": "$['forms'][0]['url']"
+								},
+								"sink": {
+									"path": "UrlNombre"
+								}
+							},
+							{
+								"source": {
+									"path": "$['height']"
+								},
+								"sink": {
+									"path": "Altura"
+								}
+							},
+							{
+								"source": {
+									"path": "$['moves'][0]['move']['name']"
+								},
+								"sink": {
+									"path": "NombreMovimiento"
+								}
+							},
+							{
+								"source": {
+									"path": "$['types'][0]['type']['name']"
+								},
+								"sink": {
+									"path": "NombreTipo"
+								}
+							},
+							{
+								"source": {
+									"path": "$['weight']"
+								},
+								"sink": {
+									"path": "Peso"
+								}
+							}
+						],
+						"collectionReference": ""
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "API_GET_CHARIZARD",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "charizard_JSON_to_CSV",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "APIPokemon_Get_charizard",
+				"type": "WebActivity",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 1,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "GET",
+					"httpRequestTimeout": "",
+					"url": "https://pokeapi.co/api/v2/pokemon/charizard"
+				}
+			},
+			{
+				"name": "copydata_charizard_to_CSV",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "copydata_charizard_JSON",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".csv"
+						}
+					},
+					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
+					"logSettings": {
+						"enableCopyActivityLog": true,
+						"copyActivityLogSettings": {
+							"logLevel": "Warning",
+							"enableReliableLogging": false
+						},
+						"logLocationSettings": {
+							"linkedServiceName": {
+								"referenceName": "AzureBlobStorage1",
+								"type": "LinkedServiceReference"
+							}
+						}
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['nombreHabilidad']"
+								},
+								"sink": {
+									"name": "nombreHabilidad",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Nombre']"
+								},
+								"sink": {
+									"name": "Nombre",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['UrlNombre']"
+								},
+								"sink": {
+									"name": "UrlNombre",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Altura']"
+								},
+								"sink": {
+									"name": "Altura",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['NombreMovimiento']"
+								},
+								"sink": {
+									"name": "NombreMovimiento",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['NombreTipo']"
+								},
+								"sink": {
+									"name": "NombreTipo",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Peso']"
+								},
+								"sink": {
+									"name": "Peso",
+									"type": "Int64"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "charizard_JSON_to_CSV",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "charizard_copydata_From_JSON",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "copydata_charizard_JSON_No_esquema",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "APIPokemon_Get_charizard",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET",
+						"paginationRules": {
+							"supportRFC5988": "true"
+						}
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
+					"logSettings": {
+						"enableCopyActivityLog": true,
+						"copyActivityLogSettings": {
+							"logLevel": "Warning",
+							"enableReliableLogging": false
+						},
+						"logLocationSettings": {
+							"linkedServiceName": {
+								"referenceName": "AzureBlobStorage1",
+								"type": "LinkedServiceReference"
+							}
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "API_GET_CHARIZARD",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "json_no_esquema",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"folder": {
+			"name": "pokemon_ejercicio"
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-06-03T22:02:58Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,69 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "clase5_ejemplo",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ejercicioBikes"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "web-scraper-order",
+				"type": "varchar"
+			},
+			{
+				"name": "web-scraper-start-url",
+				"type": "varchar"
+			},
+			{
+				"name": "Links",
+				"type": "varchar"
+			},
+			{
+				"name": "Links-href",
+				"type": "varchar"
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Engine",
+				"type": "varchar"
+			},
+			{
+				"name": "Mileage",
+				"type": "varchar"
+			},
+			{
+				"name": "Transmission",
+				"type": "varchar"
+			},
+			{
+				"name": "Fuel Tank Capacity",
+				"type": "varchar"
+			},
+			{
+				"name": "Weight",
+				"type": "varchar"
+			},
+			{
+				"name": "Seat Height",
+				"type": "varchar"
+			},
+			{
+				"name": "Price",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Clase5_demo"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

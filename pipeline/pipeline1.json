@@ -1,0 +1,189 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
+					"logSettings": {
+						"enableCopyActivityLog": true,
+						"copyActivityLogSettings": {
+							"logLevel": "Warning",
+							"enableReliableLogging": false
+						},
+						"logLocationSettings": {
+							"linkedServiceName": {
+								"referenceName": "AzureBlobStorage1",
+								"type": "LinkedServiceReference"
+							}
+						}
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "indice_tiempo",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "indice_tiempo",
+									"type": "DateTime",
+									"physicalType": "date"
+								}
+							},
+							{
+								"source": {
+									"name": "tasas_interes_cajas_ahorro",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tasas_interes_cajas_ahorro",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "tasas_interes_plazo_fijo_30_59_dias",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tasas_interes_plazo_fijo_30_59_dias",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "tasas_interes_activas_adelantos",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tasas_interes_activas_adelantos",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "tasas_interes_activas_documentos",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tasas_interes_activas_documentos",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "tasas_interes_activas_hipotecarios",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tasas_interes_activas_hipotecarios",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "tasas_interes_activas_prendarios",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tasas_interes_activas_prendarios",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "tasas_interes_activas_personales",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tasas_interes_activas_personales",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "tasas_interes_activas_tarjetas",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tasas_interes_activas_tarjetas",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "cvs_tasas",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "tasas_sql",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"folder": {
+			"name": "PL_tasas"
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-06-08T03:56:35Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

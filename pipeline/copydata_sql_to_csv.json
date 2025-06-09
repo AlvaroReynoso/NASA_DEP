@@ -1,0 +1,146 @@
+{
+	"name": "copydata_sql_to_csv",
+	"properties": {
+		"activities": [
+			{
+				"name": "lookup_products",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"sqlReaderQuery": "SELECT COUNT(*) FROM dbo.products",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DS_SQL_product_query_count",
+						"type": "DatasetReference"
+					},
+					"firstRowOnly": true
+				}
+			},
+			{
+				"name": "copydata_sql_to_csv",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "lookup_products",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"queryTimeout": "00:20:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".csv"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_SQL_products_insert",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "products_csv",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "sp_register_log",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [
+					{
+						"activity": "copydata_sql_to_csv",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[sp_LogExport]",
+					"storedProcedureParameters": {
+						"comment": {
+							"value": "\"Exportación SQL a CSV completada\"",
+							"type": "String"
+						},
+						"records_exported": {
+							"value": {
+								"value": "@activity('copydata_sql_to_csv').output.rowsCopied",
+								"type": "Expression"
+							},
+							"type": "Int32"
+						},
+						"status": {
+							"value": "\"Exito\"",
+							"type": "String"
+						},
+						"table_name": {
+							"value": "\"products\"",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS__SQL_SalesDB",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"folder": {
+			"name": "PL_ejercicio_products"
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-06-03T23:52:19Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

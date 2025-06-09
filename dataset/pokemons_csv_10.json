@@ -1,0 +1,80 @@
+{
+	"name": "pokemons_csv_10",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "pokemons datasets"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "pokemons_ejercicio",
+				"container": "users"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Date",
+				"type": "String"
+			},
+			{
+				"name": "Time",
+				"type": "String"
+			},
+			{
+				"name": "Location",
+				"type": "String"
+			},
+			{
+				"name": "Operator",
+				"type": "String"
+			},
+			{
+				"name": "Flight #",
+				"type": "String"
+			},
+			{
+				"name": "Route",
+				"type": "String"
+			},
+			{
+				"name": "Type",
+				"type": "String"
+			},
+			{
+				"name": "Registration",
+				"type": "String"
+			},
+			{
+				"name": "cn/In",
+				"type": "String"
+			},
+			{
+				"name": "Aboard",
+				"type": "String"
+			},
+			{
+				"name": "Fatalities",
+				"type": "String"
+			},
+			{
+				"name": "Ground",
+				"type": "String"
+			},
+			{
+				"name": "Summary",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

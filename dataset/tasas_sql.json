@@ -1,0 +1,62 @@
+{
+	"name": "tasas_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "clase5_ejemplo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "indice_tiempo",
+				"type": "date"
+			},
+			{
+				"name": "tasas_interes_cajas_ahorro",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "tasas_interes_plazo_fijo_30_59_dias",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "tasas_interes_activas_adelantos",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "tasas_interes_activas_documentos",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "tasas_interes_activas_hipotecarios",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "tasas_interes_activas_prendarios",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "tasas_interes_activas_personales",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "tasas_interes_activas_tarjetas",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tasas_interes_raw"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

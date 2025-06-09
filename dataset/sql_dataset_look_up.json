@@ -1,0 +1,29 @@
+{
+	"name": "sql_dataset_look_up",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_dataset_look_up",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "sql_dataset_look_up"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "nombre_pokemon",
+				"type": "varchar"
+			},
+			{
+				"name": "url_pokemon",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "pokemons_10"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

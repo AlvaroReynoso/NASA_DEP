@@ -1,0 +1,34 @@
+{
+	"name": "DS_product_query",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS__SQL_SalesDB",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DS_list_of_products"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "nombre",
+				"type": "varchar"
+			},
+			{
+				"name": "descripcion",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "products"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

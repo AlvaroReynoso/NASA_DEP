@@ -1,0 +1,86 @@
+{
+	"name": "nombres_pokemons_variables",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "GET",
+					"url": "https://pokeapi.co/api/v2/pokemon/ditto"
+				}
+			},
+			{
+				"name": "nombre_ditto",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Web1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "nombres",
+					"value": {
+						"value": "@activity('Web1').output.forms[0].name",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "moves_ditto",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Web1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "movimiento",
+					"value": {
+						"value": "@activity('Web1').output.moves[0].move.name",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"nombres": {
+				"type": "String"
+			},
+			"movimiento": {
+				"type": "String"
+			}
+		},
+		"folder": {
+			"name": "pokemon_ejercicio"
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-05-31T18:40:59Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
