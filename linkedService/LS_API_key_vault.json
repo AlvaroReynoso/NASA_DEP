@@ -1,0 +1,22 @@
+{
+	"name": "LS_API_key_vault",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://api.nasa.gov/insight_weather/?feedtype=json&ver=1.0",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous",
+			"authHeaders": {
+				"api_key": {
+					"type": "AzureKeyVaultSecret",
+					"store": {
+						"referenceName": "LS_KEYVAULT",
+						"type": "LinkedServiceReference"
+					},
+					"secretName": "NASA-API-KEY"
+				}
+			}
+		}
+	}
+}
