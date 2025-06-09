@@ -4,7 +4,7 @@
 		"parameters": {
 			"NASA_API_KEY": {
 				"type": "string",
-				"defaultValue": "@Microsoft.KeyVault(SecretName=’NASA-API-KEY’)"
+				"defaultValue": "@Microsoft.KeyVault(SecretName=@Microsoft.KeyVault(SecretName='NASA-API-KEY'))"
 			}
 		},
 		"annotations": [],
