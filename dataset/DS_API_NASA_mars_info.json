@@ -3,10 +3,7 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_API_key_vault",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"NASA_API_KEY": "@Microsoft.KeyVault(SecretName=’NASA-API-KEY’)"
-			}
+			"type": "LinkedServiceReference"
 		},
 		"folder": {
 			"name": "DS_NASA_work"
