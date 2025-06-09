@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://api.nasa.gov/insight_weather/?feedtype=json&ver=1.0",
+			"url": "https://api.nasa.gov/insight_weather/?api_key=6uZF2fm9jgGtAlG9MuT4NCVFCbk4HF7fDcYvzHSL&feedtype=json&ver=1.0",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
