@@ -1,6 +1,12 @@
 {
 	"name": "LS_API_key_vault",
 	"properties": {
+		"parameters": {
+			"NASA_API_KEY": {
+				"type": "string",
+				"defaultValue": "@Microsoft.KeyVault(SecretName=’NASA-API-KEY’)"
+			}
+		},
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
