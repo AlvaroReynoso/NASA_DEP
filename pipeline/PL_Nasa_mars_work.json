@@ -34,6 +34,12 @@
 				]
 			}
 		],
+		"parameters": {
+			"api_key": {
+				"type": "string",
+				"defaultValue": "6uZF2fm9jgGtAlG9MuT4NCVFCbk4HF7fDcYvzHSL"
+			}
+		},
 		"folder": {
 			"name": "PL_NASA_mars_work"
 		},
