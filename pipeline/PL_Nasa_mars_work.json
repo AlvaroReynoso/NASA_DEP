@@ -50,6 +50,5380 @@
 								"type": "LinkedServiceReference"
 							}
 						}
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['675']['AT']['av']"
+								},
+								"sink": {
+									"name": "675_AT_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['AT']['ct']"
+								},
+								"sink": {
+									"name": "675_AT_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['AT']['mn']"
+								},
+								"sink": {
+									"name": "675_AT_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['AT']['mx']"
+								},
+								"sink": {
+									"name": "675_AT_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['First_UTC']"
+								},
+								"sink": {
+									"name": "675_First_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['HWS']['av']"
+								},
+								"sink": {
+									"name": "675_HWS_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['HWS']['ct']"
+								},
+								"sink": {
+									"name": "675_HWS_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['HWS']['mn']"
+								},
+								"sink": {
+									"name": "675_HWS_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['HWS']['mx']"
+								},
+								"sink": {
+									"name": "675_HWS_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['Last_UTC']"
+								},
+								"sink": {
+									"name": "675_Last_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['Month_ordinal']"
+								},
+								"sink": {
+									"name": "675_Month_ordinal"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['Northern_season']"
+								},
+								"sink": {
+									"name": "675_Northern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['PRE']['av']"
+								},
+								"sink": {
+									"name": "675_PRE_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['PRE']['ct']"
+								},
+								"sink": {
+									"name": "675_PRE_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['PRE']['mn']"
+								},
+								"sink": {
+									"name": "675_PRE_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['PRE']['mx']"
+								},
+								"sink": {
+									"name": "675_PRE_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['Season']"
+								},
+								"sink": {
+									"name": "675_Season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['Southern_season']"
+								},
+								"sink": {
+									"name": "675_Southern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['0']['compass_degrees']"
+								},
+								"sink": {
+									"name": "675_WD_0_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['0']['compass_point']"
+								},
+								"sink": {
+									"name": "675_WD_0_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['0']['compass_right']"
+								},
+								"sink": {
+									"name": "675_WD_0_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['0']['compass_up']"
+								},
+								"sink": {
+									"name": "675_WD_0_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['0']['ct']"
+								},
+								"sink": {
+									"name": "675_WD_0_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['1']['compass_degrees']"
+								},
+								"sink": {
+									"name": "675_WD_1_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['1']['compass_point']"
+								},
+								"sink": {
+									"name": "675_WD_1_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['1']['compass_right']"
+								},
+								"sink": {
+									"name": "675_WD_1_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['1']['compass_up']"
+								},
+								"sink": {
+									"name": "675_WD_1_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['1']['ct']"
+								},
+								"sink": {
+									"name": "675_WD_1_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['9']['compass_degrees']"
+								},
+								"sink": {
+									"name": "675_WD_9_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['9']['compass_point']"
+								},
+								"sink": {
+									"name": "675_WD_9_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['9']['compass_right']"
+								},
+								"sink": {
+									"name": "675_WD_9_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['9']['compass_up']"
+								},
+								"sink": {
+									"name": "675_WD_9_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['9']['ct']"
+								},
+								"sink": {
+									"name": "675_WD_9_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['10']['compass_degrees']"
+								},
+								"sink": {
+									"name": "675_WD_10_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['10']['compass_point']"
+								},
+								"sink": {
+									"name": "675_WD_10_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['10']['compass_right']"
+								},
+								"sink": {
+									"name": "675_WD_10_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['10']['compass_up']"
+								},
+								"sink": {
+									"name": "675_WD_10_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['10']['ct']"
+								},
+								"sink": {
+									"name": "675_WD_10_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['11']['compass_degrees']"
+								},
+								"sink": {
+									"name": "675_WD_11_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['11']['compass_point']"
+								},
+								"sink": {
+									"name": "675_WD_11_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['11']['compass_right']"
+								},
+								"sink": {
+									"name": "675_WD_11_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['11']['compass_up']"
+								},
+								"sink": {
+									"name": "675_WD_11_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['11']['ct']"
+								},
+								"sink": {
+									"name": "675_WD_11_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['12']['compass_degrees']"
+								},
+								"sink": {
+									"name": "675_WD_12_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['12']['compass_point']"
+								},
+								"sink": {
+									"name": "675_WD_12_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['12']['compass_right']"
+								},
+								"sink": {
+									"name": "675_WD_12_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['12']['compass_up']"
+								},
+								"sink": {
+									"name": "675_WD_12_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['12']['ct']"
+								},
+								"sink": {
+									"name": "675_WD_12_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['13']['compass_degrees']"
+								},
+								"sink": {
+									"name": "675_WD_13_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['13']['compass_point']"
+								},
+								"sink": {
+									"name": "675_WD_13_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['13']['compass_right']"
+								},
+								"sink": {
+									"name": "675_WD_13_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['13']['compass_up']"
+								},
+								"sink": {
+									"name": "675_WD_13_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['13']['ct']"
+								},
+								"sink": {
+									"name": "675_WD_13_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['14']['compass_degrees']"
+								},
+								"sink": {
+									"name": "675_WD_14_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['14']['compass_point']"
+								},
+								"sink": {
+									"name": "675_WD_14_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['14']['compass_right']"
+								},
+								"sink": {
+									"name": "675_WD_14_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['14']['compass_up']"
+								},
+								"sink": {
+									"name": "675_WD_14_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['14']['ct']"
+								},
+								"sink": {
+									"name": "675_WD_14_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['15']['compass_degrees']"
+								},
+								"sink": {
+									"name": "675_WD_15_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['15']['compass_point']"
+								},
+								"sink": {
+									"name": "675_WD_15_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['15']['compass_right']"
+								},
+								"sink": {
+									"name": "675_WD_15_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['15']['compass_up']"
+								},
+								"sink": {
+									"name": "675_WD_15_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['15']['ct']"
+								},
+								"sink": {
+									"name": "675_WD_15_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['most_common']['compass_degrees']"
+								},
+								"sink": {
+									"name": "675_WD_most_common_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['most_common']['compass_point']"
+								},
+								"sink": {
+									"name": "675_WD_most_common_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['most_common']['compass_right']"
+								},
+								"sink": {
+									"name": "675_WD_most_common_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['most_common']['compass_up']"
+								},
+								"sink": {
+									"name": "675_WD_most_common_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['675']['WD']['most_common']['ct']"
+								},
+								"sink": {
+									"name": "675_WD_most_common_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['AT']['av']"
+								},
+								"sink": {
+									"name": "676_AT_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['AT']['ct']"
+								},
+								"sink": {
+									"name": "676_AT_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['AT']['mn']"
+								},
+								"sink": {
+									"name": "676_AT_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['AT']['mx']"
+								},
+								"sink": {
+									"name": "676_AT_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['First_UTC']"
+								},
+								"sink": {
+									"name": "676_First_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['HWS']['av']"
+								},
+								"sink": {
+									"name": "676_HWS_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['HWS']['ct']"
+								},
+								"sink": {
+									"name": "676_HWS_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['HWS']['mn']"
+								},
+								"sink": {
+									"name": "676_HWS_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['HWS']['mx']"
+								},
+								"sink": {
+									"name": "676_HWS_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['Last_UTC']"
+								},
+								"sink": {
+									"name": "676_Last_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['Month_ordinal']"
+								},
+								"sink": {
+									"name": "676_Month_ordinal"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['Northern_season']"
+								},
+								"sink": {
+									"name": "676_Northern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['PRE']['av']"
+								},
+								"sink": {
+									"name": "676_PRE_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['PRE']['ct']"
+								},
+								"sink": {
+									"name": "676_PRE_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['PRE']['mn']"
+								},
+								"sink": {
+									"name": "676_PRE_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['PRE']['mx']"
+								},
+								"sink": {
+									"name": "676_PRE_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['Season']"
+								},
+								"sink": {
+									"name": "676_Season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['Southern_season']"
+								},
+								"sink": {
+									"name": "676_Southern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['0']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_0_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['0']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_0_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['0']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_0_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['0']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_0_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['0']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_0_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['1']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_1_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['1']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_1_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['1']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_1_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['1']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_1_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['1']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_1_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['2']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_2_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['2']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_2_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['2']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_2_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['2']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_2_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['2']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_2_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['5']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_5_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['5']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_5_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['5']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_5_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['5']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_5_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['5']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_5_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['10']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_10_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['10']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_10_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['10']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_10_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['10']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_10_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['10']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_10_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['11']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_11_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['11']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_11_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['11']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_11_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['11']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_11_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['11']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_11_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['12']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_12_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['12']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_12_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['12']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_12_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['12']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_12_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['12']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_12_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['13']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_13_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['13']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_13_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['13']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_13_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['13']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_13_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['13']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_13_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['14']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_14_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['14']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_14_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['14']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_14_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['14']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_14_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['14']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_14_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['15']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_15_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['15']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_15_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['15']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_15_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['15']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_15_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['15']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_15_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['most_common']['compass_degrees']"
+								},
+								"sink": {
+									"name": "676_WD_most_common_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['most_common']['compass_point']"
+								},
+								"sink": {
+									"name": "676_WD_most_common_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['most_common']['compass_right']"
+								},
+								"sink": {
+									"name": "676_WD_most_common_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['most_common']['compass_up']"
+								},
+								"sink": {
+									"name": "676_WD_most_common_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['676']['WD']['most_common']['ct']"
+								},
+								"sink": {
+									"name": "676_WD_most_common_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['AT']['av']"
+								},
+								"sink": {
+									"name": "677_AT_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['AT']['ct']"
+								},
+								"sink": {
+									"name": "677_AT_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['AT']['mn']"
+								},
+								"sink": {
+									"name": "677_AT_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['AT']['mx']"
+								},
+								"sink": {
+									"name": "677_AT_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['First_UTC']"
+								},
+								"sink": {
+									"name": "677_First_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['HWS']['av']"
+								},
+								"sink": {
+									"name": "677_HWS_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['HWS']['ct']"
+								},
+								"sink": {
+									"name": "677_HWS_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['HWS']['mn']"
+								},
+								"sink": {
+									"name": "677_HWS_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['HWS']['mx']"
+								},
+								"sink": {
+									"name": "677_HWS_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['Last_UTC']"
+								},
+								"sink": {
+									"name": "677_Last_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['Month_ordinal']"
+								},
+								"sink": {
+									"name": "677_Month_ordinal"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['Northern_season']"
+								},
+								"sink": {
+									"name": "677_Northern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['PRE']['av']"
+								},
+								"sink": {
+									"name": "677_PRE_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['PRE']['ct']"
+								},
+								"sink": {
+									"name": "677_PRE_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['PRE']['mn']"
+								},
+								"sink": {
+									"name": "677_PRE_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['PRE']['mx']"
+								},
+								"sink": {
+									"name": "677_PRE_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['Season']"
+								},
+								"sink": {
+									"name": "677_Season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['Southern_season']"
+								},
+								"sink": {
+									"name": "677_Southern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['0']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_0_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['0']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_0_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['0']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_0_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['0']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_0_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['0']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_0_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['1']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_1_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['1']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_1_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['1']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_1_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['1']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_1_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['1']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_1_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['2']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_2_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['2']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_2_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['2']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_2_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['2']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_2_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['2']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_2_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['5']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_5_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['5']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_5_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['5']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_5_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['5']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_5_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['5']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_5_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['10']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_10_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['10']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_10_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['10']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_10_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['10']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_10_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['10']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_10_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['11']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_11_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['11']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_11_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['11']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_11_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['11']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_11_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['11']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_11_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['12']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_12_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['12']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_12_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['12']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_12_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['12']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_12_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['12']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_12_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['13']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_13_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['13']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_13_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['13']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_13_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['13']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_13_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['13']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_13_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['14']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_14_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['14']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_14_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['14']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_14_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['14']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_14_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['14']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_14_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['15']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_15_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['15']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_15_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['15']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_15_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['15']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_15_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['15']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_15_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['most_common']['compass_degrees']"
+								},
+								"sink": {
+									"name": "677_WD_most_common_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['most_common']['compass_point']"
+								},
+								"sink": {
+									"name": "677_WD_most_common_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['most_common']['compass_right']"
+								},
+								"sink": {
+									"name": "677_WD_most_common_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['most_common']['compass_up']"
+								},
+								"sink": {
+									"name": "677_WD_most_common_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['677']['WD']['most_common']['ct']"
+								},
+								"sink": {
+									"name": "677_WD_most_common_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['AT']['av']"
+								},
+								"sink": {
+									"name": "678_AT_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['AT']['ct']"
+								},
+								"sink": {
+									"name": "678_AT_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['AT']['mn']"
+								},
+								"sink": {
+									"name": "678_AT_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['AT']['mx']"
+								},
+								"sink": {
+									"name": "678_AT_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['First_UTC']"
+								},
+								"sink": {
+									"name": "678_First_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['HWS']['av']"
+								},
+								"sink": {
+									"name": "678_HWS_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['HWS']['ct']"
+								},
+								"sink": {
+									"name": "678_HWS_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['HWS']['mn']"
+								},
+								"sink": {
+									"name": "678_HWS_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['HWS']['mx']"
+								},
+								"sink": {
+									"name": "678_HWS_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['Last_UTC']"
+								},
+								"sink": {
+									"name": "678_Last_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['Month_ordinal']"
+								},
+								"sink": {
+									"name": "678_Month_ordinal"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['Northern_season']"
+								},
+								"sink": {
+									"name": "678_Northern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['PRE']['av']"
+								},
+								"sink": {
+									"name": "678_PRE_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['PRE']['ct']"
+								},
+								"sink": {
+									"name": "678_PRE_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['PRE']['mn']"
+								},
+								"sink": {
+									"name": "678_PRE_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['PRE']['mx']"
+								},
+								"sink": {
+									"name": "678_PRE_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['Season']"
+								},
+								"sink": {
+									"name": "678_Season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['Southern_season']"
+								},
+								"sink": {
+									"name": "678_Southern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['0']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_0_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['0']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_0_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['0']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_0_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['0']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_0_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['0']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_0_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['1']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_1_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['1']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_1_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['1']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_1_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['1']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_1_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['1']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_1_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['2']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_2_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['2']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_2_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['2']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_2_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['2']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_2_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['2']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_2_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['3']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_3_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['3']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_3_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['3']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_3_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['3']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_3_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['3']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_3_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['5']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_5_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['5']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_5_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['5']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_5_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['5']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_5_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['5']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_5_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['6']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_6_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['6']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_6_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['6']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_6_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['6']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_6_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['6']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_6_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['7']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_7_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['7']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_7_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['7']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_7_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['7']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_7_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['7']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_7_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['8']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_8_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['8']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_8_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['8']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_8_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['8']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_8_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['8']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_8_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['9']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_9_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['9']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_9_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['9']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_9_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['9']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_9_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['9']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_9_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['10']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_10_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['10']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_10_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['10']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_10_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['10']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_10_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['10']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_10_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['11']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_11_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['11']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_11_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['11']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_11_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['11']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_11_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['11']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_11_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['12']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_12_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['12']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_12_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['12']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_12_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['12']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_12_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['12']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_12_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['13']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_13_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['13']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_13_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['13']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_13_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['13']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_13_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['13']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_13_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['14']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_14_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['14']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_14_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['14']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_14_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['14']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_14_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['14']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_14_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['15']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_15_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['15']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_15_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['15']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_15_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['15']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_15_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['15']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_15_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['most_common']['compass_degrees']"
+								},
+								"sink": {
+									"name": "678_WD_most_common_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['most_common']['compass_point']"
+								},
+								"sink": {
+									"name": "678_WD_most_common_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['most_common']['compass_right']"
+								},
+								"sink": {
+									"name": "678_WD_most_common_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['most_common']['compass_up']"
+								},
+								"sink": {
+									"name": "678_WD_most_common_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['678']['WD']['most_common']['ct']"
+								},
+								"sink": {
+									"name": "678_WD_most_common_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['AT']['av']"
+								},
+								"sink": {
+									"name": "679_AT_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['AT']['ct']"
+								},
+								"sink": {
+									"name": "679_AT_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['AT']['mn']"
+								},
+								"sink": {
+									"name": "679_AT_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['AT']['mx']"
+								},
+								"sink": {
+									"name": "679_AT_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['First_UTC']"
+								},
+								"sink": {
+									"name": "679_First_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['HWS']['av']"
+								},
+								"sink": {
+									"name": "679_HWS_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['HWS']['ct']"
+								},
+								"sink": {
+									"name": "679_HWS_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['HWS']['mn']"
+								},
+								"sink": {
+									"name": "679_HWS_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['HWS']['mx']"
+								},
+								"sink": {
+									"name": "679_HWS_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['Last_UTC']"
+								},
+								"sink": {
+									"name": "679_Last_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['Month_ordinal']"
+								},
+								"sink": {
+									"name": "679_Month_ordinal"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['Northern_season']"
+								},
+								"sink": {
+									"name": "679_Northern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['PRE']['av']"
+								},
+								"sink": {
+									"name": "679_PRE_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['PRE']['ct']"
+								},
+								"sink": {
+									"name": "679_PRE_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['PRE']['mn']"
+								},
+								"sink": {
+									"name": "679_PRE_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['PRE']['mx']"
+								},
+								"sink": {
+									"name": "679_PRE_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['Season']"
+								},
+								"sink": {
+									"name": "679_Season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['Southern_season']"
+								},
+								"sink": {
+									"name": "679_Southern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['0']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_0_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['0']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_0_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['0']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_0_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['0']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_0_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['0']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_0_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['1']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_1_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['1']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_1_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['1']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_1_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['1']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_1_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['1']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_1_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['2']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_2_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['2']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_2_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['2']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_2_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['2']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_2_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['2']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_2_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['3']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_3_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['3']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_3_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['3']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_3_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['3']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_3_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['3']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_3_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['5']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_5_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['5']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_5_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['5']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_5_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['5']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_5_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['5']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_5_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['6']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_6_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['6']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_6_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['6']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_6_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['6']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_6_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['6']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_6_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['7']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_7_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['7']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_7_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['7']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_7_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['7']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_7_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['7']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_7_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['8']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_8_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['8']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_8_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['8']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_8_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['8']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_8_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['8']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_8_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['9']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_9_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['9']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_9_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['9']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_9_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['9']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_9_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['9']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_9_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['10']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_10_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['10']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_10_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['10']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_10_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['10']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_10_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['10']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_10_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['11']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_11_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['11']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_11_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['11']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_11_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['11']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_11_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['11']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_11_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['12']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_12_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['12']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_12_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['12']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_12_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['12']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_12_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['12']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_12_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['13']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_13_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['13']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_13_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['13']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_13_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['13']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_13_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['13']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_13_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['14']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_14_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['14']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_14_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['14']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_14_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['14']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_14_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['14']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_14_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['15']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_15_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['15']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_15_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['15']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_15_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['15']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_15_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['15']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_15_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['most_common']['compass_degrees']"
+								},
+								"sink": {
+									"name": "679_WD_most_common_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['most_common']['compass_point']"
+								},
+								"sink": {
+									"name": "679_WD_most_common_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['most_common']['compass_right']"
+								},
+								"sink": {
+									"name": "679_WD_most_common_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['most_common']['compass_up']"
+								},
+								"sink": {
+									"name": "679_WD_most_common_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['679']['WD']['most_common']['ct']"
+								},
+								"sink": {
+									"name": "679_WD_most_common_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['AT']['av']"
+								},
+								"sink": {
+									"name": "680_AT_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['AT']['ct']"
+								},
+								"sink": {
+									"name": "680_AT_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['AT']['mn']"
+								},
+								"sink": {
+									"name": "680_AT_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['AT']['mx']"
+								},
+								"sink": {
+									"name": "680_AT_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['First_UTC']"
+								},
+								"sink": {
+									"name": "680_First_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['HWS']['av']"
+								},
+								"sink": {
+									"name": "680_HWS_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['HWS']['ct']"
+								},
+								"sink": {
+									"name": "680_HWS_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['HWS']['mn']"
+								},
+								"sink": {
+									"name": "680_HWS_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['HWS']['mx']"
+								},
+								"sink": {
+									"name": "680_HWS_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['Last_UTC']"
+								},
+								"sink": {
+									"name": "680_Last_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['Month_ordinal']"
+								},
+								"sink": {
+									"name": "680_Month_ordinal"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['Northern_season']"
+								},
+								"sink": {
+									"name": "680_Northern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['PRE']['av']"
+								},
+								"sink": {
+									"name": "680_PRE_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['PRE']['ct']"
+								},
+								"sink": {
+									"name": "680_PRE_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['PRE']['mn']"
+								},
+								"sink": {
+									"name": "680_PRE_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['PRE']['mx']"
+								},
+								"sink": {
+									"name": "680_PRE_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['Season']"
+								},
+								"sink": {
+									"name": "680_Season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['Southern_season']"
+								},
+								"sink": {
+									"name": "680_Southern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['0']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_0_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['0']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_0_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['0']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_0_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['0']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_0_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['0']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_0_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['1']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_1_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['1']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_1_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['1']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_1_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['1']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_1_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['1']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_1_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['5']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_5_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['5']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_5_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['5']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_5_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['5']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_5_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['5']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_5_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['6']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_6_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['6']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_6_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['6']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_6_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['6']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_6_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['6']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_6_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['7']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_7_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['7']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_7_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['7']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_7_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['7']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_7_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['7']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_7_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['8']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_8_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['8']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_8_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['8']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_8_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['8']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_8_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['8']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_8_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['9']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_9_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['9']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_9_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['9']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_9_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['9']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_9_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['9']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_9_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['10']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_10_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['10']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_10_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['10']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_10_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['10']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_10_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['10']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_10_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['11']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_11_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['11']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_11_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['11']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_11_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['11']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_11_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['11']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_11_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['12']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_12_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['12']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_12_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['12']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_12_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['12']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_12_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['12']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_12_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['13']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_13_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['13']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_13_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['13']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_13_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['13']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_13_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['13']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_13_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['14']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_14_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['14']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_14_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['14']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_14_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['14']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_14_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['14']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_14_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['15']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_15_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['15']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_15_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['15']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_15_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['15']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_15_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['15']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_15_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['most_common']['compass_degrees']"
+								},
+								"sink": {
+									"name": "680_WD_most_common_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['most_common']['compass_point']"
+								},
+								"sink": {
+									"name": "680_WD_most_common_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['most_common']['compass_right']"
+								},
+								"sink": {
+									"name": "680_WD_most_common_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['most_common']['compass_up']"
+								},
+								"sink": {
+									"name": "680_WD_most_common_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['680']['WD']['most_common']['ct']"
+								},
+								"sink": {
+									"name": "680_WD_most_common_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['AT']['av']"
+								},
+								"sink": {
+									"name": "681_AT_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['AT']['ct']"
+								},
+								"sink": {
+									"name": "681_AT_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['AT']['mn']"
+								},
+								"sink": {
+									"name": "681_AT_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['AT']['mx']"
+								},
+								"sink": {
+									"name": "681_AT_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['First_UTC']"
+								},
+								"sink": {
+									"name": "681_First_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['HWS']['av']"
+								},
+								"sink": {
+									"name": "681_HWS_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['HWS']['ct']"
+								},
+								"sink": {
+									"name": "681_HWS_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['HWS']['mn']"
+								},
+								"sink": {
+									"name": "681_HWS_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['HWS']['mx']"
+								},
+								"sink": {
+									"name": "681_HWS_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['Last_UTC']"
+								},
+								"sink": {
+									"name": "681_Last_UTC"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['Month_ordinal']"
+								},
+								"sink": {
+									"name": "681_Month_ordinal"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['Northern_season']"
+								},
+								"sink": {
+									"name": "681_Northern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['PRE']['av']"
+								},
+								"sink": {
+									"name": "681_PRE_av"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['PRE']['ct']"
+								},
+								"sink": {
+									"name": "681_PRE_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['PRE']['mn']"
+								},
+								"sink": {
+									"name": "681_PRE_mn"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['PRE']['mx']"
+								},
+								"sink": {
+									"name": "681_PRE_mx"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['Season']"
+								},
+								"sink": {
+									"name": "681_Season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['Southern_season']"
+								},
+								"sink": {
+									"name": "681_Southern_season"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['0']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_0_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['0']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_0_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['0']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_0_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['0']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_0_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['0']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_0_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['1']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_1_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['1']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_1_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['1']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_1_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['1']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_1_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['1']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_1_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['2']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_2_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['2']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_2_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['2']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_2_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['2']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_2_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['2']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_2_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['3']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_3_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['3']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_3_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['3']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_3_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['3']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_3_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['3']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_3_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['5']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_5_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['5']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_5_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['5']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_5_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['5']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_5_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['5']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_5_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['6']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_6_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['6']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_6_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['6']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_6_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['6']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_6_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['6']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_6_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['7']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_7_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['7']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_7_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['7']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_7_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['7']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_7_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['7']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_7_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['8']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_8_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['8']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_8_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['8']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_8_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['8']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_8_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['8']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_8_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['9']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_9_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['9']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_9_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['9']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_9_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['9']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_9_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['9']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_9_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['10']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_10_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['10']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_10_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['10']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_10_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['10']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_10_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['10']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_10_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['11']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_11_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['11']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_11_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['11']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_11_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['11']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_11_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['11']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_11_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['12']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_12_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['12']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_12_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['12']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_12_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['12']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_12_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['12']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_12_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['13']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_13_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['13']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_13_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['13']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_13_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['13']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_13_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['13']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_13_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['14']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_14_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['14']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_14_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['14']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_14_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['14']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_14_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['14']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_14_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['15']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_15_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['15']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_15_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['15']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_15_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['15']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_15_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['15']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_15_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['most_common']['compass_degrees']"
+								},
+								"sink": {
+									"name": "681_WD_most_common_compass_degrees"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['most_common']['compass_point']"
+								},
+								"sink": {
+									"name": "681_WD_most_common_compass_point"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['most_common']['compass_right']"
+								},
+								"sink": {
+									"name": "681_WD_most_common_compass_right"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['most_common']['compass_up']"
+								},
+								"sink": {
+									"name": "681_WD_most_common_compass_up"
+								}
+							},
+							{
+								"source": {
+									"path": "$['681']['WD']['most_common']['ct']"
+								},
+								"sink": {
+									"name": "681_WD_most_common_ct"
+								}
+							},
+							{
+								"source": {
+									"path": "$['sol_keys'][0]"
+								},
+								"sink": {
+									"name": "sol_keys']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['674']['AT']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_674_AT_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['674']['AT']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_674_AT_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['674']['HWS']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_674_HWS_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['674']['HWS']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_674_HWS_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['674']['PRE']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_674_PRE_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['674']['PRE']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_674_PRE_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['674']['WD']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_674_WD_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['674']['WD']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_674_WD_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['675']['AT']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_675_AT_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['675']['AT']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_675_AT_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['675']['HWS']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_675_HWS_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['675']['HWS']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_675_HWS_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['675']['PRE']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_675_PRE_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['675']['PRE']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_675_PRE_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['675']['WD']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_675_WD_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['675']['WD']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_675_WD_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['676']['AT']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_676_AT_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['676']['AT']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_676_AT_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['676']['HWS']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_676_HWS_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['676']['HWS']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_676_HWS_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['676']['PRE']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_676_PRE_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['676']['PRE']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_676_PRE_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['676']['WD']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_676_WD_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['676']['WD']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_676_WD_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['677']['AT']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_677_AT_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['677']['AT']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_677_AT_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['677']['HWS']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_677_HWS_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['677']['HWS']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_677_HWS_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['677']['PRE']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_677_PRE_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['677']['PRE']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_677_PRE_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['677']['WD']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_677_WD_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['677']['WD']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_677_WD_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['678']['AT']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_678_AT_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['678']['AT']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_678_AT_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['678']['HWS']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_678_HWS_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['678']['HWS']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_678_HWS_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['678']['PRE']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_678_PRE_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['678']['PRE']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_678_PRE_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['678']['WD']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_678_WD_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['678']['WD']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_678_WD_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['679']['AT']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_679_AT_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['679']['AT']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_679_AT_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['679']['HWS']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_679_HWS_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['679']['HWS']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_679_HWS_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['679']['PRE']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_679_PRE_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['679']['PRE']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_679_PRE_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['679']['WD']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_679_WD_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['679']['WD']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_679_WD_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['680']['AT']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_680_AT_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['680']['AT']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_680_AT_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['680']['HWS']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_680_HWS_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['680']['HWS']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_680_HWS_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['680']['PRE']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_680_PRE_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['680']['PRE']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_680_PRE_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['680']['WD']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_680_WD_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['680']['WD']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_680_WD_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['681']['AT']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_681_AT_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['681']['AT']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_681_AT_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['681']['HWS']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_681_HWS_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['681']['HWS']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_681_HWS_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['681']['PRE']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_681_PRE_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['681']['PRE']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_681_PRE_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['681']['WD']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_681_WD_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['681']['WD']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_681_WD_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['682']['AT']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_682_AT_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['682']['AT']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_682_AT_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['682']['HWS']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_682_HWS_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['682']['HWS']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_682_HWS_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['682']['PRE']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_682_PRE_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['682']['PRE']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_682_PRE_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['682']['WD']['sol_hours_with_data'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_682_WD_sol_hours_with_data']["
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['682']['WD']['valid']"
+								},
+								"sink": {
+									"name": "validity_checks_682_WD_valid"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['sol_hours_required']"
+								},
+								"sink": {
+									"name": "sol_hours_required"
+								}
+							},
+							{
+								"source": {
+									"path": "$['validity_checks']['sols_checked'][0]"
+								},
+								"sink": {
+									"name": "validity_checks_sols_checked']["
+								}
+							}
+						],
+						"collectionReference": ""
 					}
 				},
 				"inputs": [
