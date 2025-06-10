@@ -3,7 +3,10 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_API_key_vault",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"apikey": "6uZF2fm9jgGtAlG9MuT4NCVFCbk4HF7fDcYvzHSL"
+			}
 		},
 		"folder": {
 			"name": "DS_NASA_work"

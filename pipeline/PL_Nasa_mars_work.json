@@ -51,6 +51,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"apikey": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "PL_NASA_mars_work"
 		},
