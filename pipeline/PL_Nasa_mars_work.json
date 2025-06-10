@@ -5434,7 +5434,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "NASA_mars_info_csv",
+						"referenceName": "NASA_mars_info_json",
 						"type": "DatasetReference"
 					}
 				]
