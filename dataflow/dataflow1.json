@@ -15,10 +15,7 @@
 			"sinks": [],
 			"transformations": [
 				{
-					"name": "select1"
-				},
-				{
-					"name": "solArray"
+					"name": "soles"
 				}
 			],
 			"scriptLines": [
@@ -37,20 +34,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     documentForm: 'documentPerLine') ~> source1",
-				"source1 select(mapColumn(",
-				"          {675},",
-				"          {676},",
-				"          {677},",
-				"          {678},",
-				"          {679},",
-				"          {680},",
-				"          {681},",
-				"          sol_keys,",
-				"          validity_checks",
-				"     ),",
-				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> select1",
-				"select1 derive(sol_array = ERROR_FUNCTION('toArray(cast(byNames() as map(string, any)))')) ~> solArray"
+				"source1 derive(soles = ERROR_FUNCTION('toArray(cast(source() as map(string, any)))')) ~> soles"
 			]
 		}
 	}
