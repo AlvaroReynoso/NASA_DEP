@@ -16,6 +16,9 @@
 			"transformations": [
 				{
 					"name": "soles"
+				},
+				{
+					"name": "select1"
 				}
 			],
 			"scriptLines": [
@@ -34,7 +37,18 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     documentForm: 'documentPerLine') ~> source1",
-				"source1 derive(sol_keys = ERROR_FUNCTION('toArray(cast(source() as map(string, any)))')) ~> soles"
+				"select1 derive(partitionBy('hash', 1)) ~> soles",
+				"source1 select(mapColumn(",
+				"          {675},",
+				"          {676},",
+				"          {677},",
+				"          {678},",
+				"          {679},",
+				"          {680},",
+				"          {681}",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1"
 			]
 		}
 	}
