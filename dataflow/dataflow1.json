@@ -34,7 +34,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     documentForm: 'documentPerLine') ~> source1",
-				"source1 derive(soles = ERROR_FUNCTION('toArray(cast(source() as map(string, any)))')) ~> soles"
+				"source1 derive(sol_keys = ERROR_FUNCTION('toArray(cast(source() as map(string, any)))')) ~> soles"
 			]
 		}
 	}
