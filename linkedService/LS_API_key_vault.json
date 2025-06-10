@@ -1,10 +1,16 @@
 {
 	"name": "LS_API_key_vault",
 	"properties": {
+		"parameters": {
+			"api_key": {
+				"type": "string",
+				"defaultValue": "6uZF2fm9jgGtAlG9MuT4NCVFCbk4HF7fDcYvzHSL"
+			}
+		},
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://api.nasa.gov/insight_weather/?api_key=@{linkedService().apiKey}&feedtype=json&ver=1.0",
+			"url": "https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
