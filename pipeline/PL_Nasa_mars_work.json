@@ -24,6 +24,17 @@
 							"supportRFC5988": "true"
 						}
 					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
 					"enableStaging": false
 				},
 				"inputs": [
@@ -31,15 +42,15 @@
 						"referenceName": "DS_API_NASA_mars_info",
 						"type": "DatasetReference"
 					}
+				],
+				"outputs": [
+					{
+						"referenceName": "NASA_mars_info_csv",
+						"type": "DatasetReference"
+					}
 				]
 			}
 		],
-		"parameters": {
-			"api_key": {
-				"type": "string",
-				"defaultValue": "6uZF2fm9jgGtAlG9MuT4NCVFCbk4HF7fDcYvzHSL"
-			}
-		},
 		"folder": {
 			"name": "PL_NASA_mars_work"
 		},
