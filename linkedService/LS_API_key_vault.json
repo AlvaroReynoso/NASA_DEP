@@ -4,19 +4,9 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://api.nasa.gov/insight_weather/?feedtype=json&ver=1.0",
+			"url": "https://api.nasa.gov/insight_weather/?api_key=@{linkedService().apiKey}&feedtype=json&ver=1.0",
 			"enableServerCertificateValidation": true,
-			"authenticationType": "Anonymous",
-			"authHeaders": {
-				"api_key": {
-					"type": "AzureKeyVaultSecret",
-					"store": {
-						"referenceName": "LS_KEYVAULT",
-						"type": "LinkedServiceReference"
-					},
-					"secretName": "apikey"
-				}
-			}
+			"authenticationType": "Anonymous"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/linkedservices"
