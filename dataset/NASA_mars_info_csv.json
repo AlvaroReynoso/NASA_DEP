@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"container": "users"
+				"folderPath": "mars_data",
+				"container": "nasa"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
