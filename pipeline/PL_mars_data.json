@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "API_GET to JSON file",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -49,11 +49,11 @@
 				]
 			},
 			{
-				"name": "Notebook1",
+				"name": "Transform, clean JSON and create CSV file",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "Copy data1",
+						"activity": "API_GET to JSON file",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -76,11 +76,11 @@
 				}
 			},
 			{
-				"name": "Copy data2",
+				"name": "Csv to mars SQL table",
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Notebook1",
+						"activity": "Transform, clean JSON and create CSV file",
 						"dependencyConditions": [
 							"Succeeded"
 						]
