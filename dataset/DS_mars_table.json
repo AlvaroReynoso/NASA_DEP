@@ -12,7 +12,7 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "mars",
+			"schema": "",
 			"table": ""
 		}
 	}
