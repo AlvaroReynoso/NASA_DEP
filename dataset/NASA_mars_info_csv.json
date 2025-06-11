@@ -13,7 +13,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "mars_data",
+				"folderPath": "processed/mars_weather_clean_final_csv",
 				"container": "nasa"
 			},
 			"columnDelimiter": ",",
