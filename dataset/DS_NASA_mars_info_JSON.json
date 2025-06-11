@@ -1,0 +1,23 @@
+{
+	"name": "DS_NASA_mars_info_JSON",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DS_NASA_work"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data_7324c950-d84c-47b4-8793-d9b2e3fa776b_4421e690-fc91-4004-b405-7fad2000e8c4.json",
+				"folderPath": "mars_data/data_raw",
+				"container": "nasa"
+			}
+		},
+		"schema": {}
+	}
+}

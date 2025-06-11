@@ -1,0 +1,19 @@
+{
+	"name": "DS_mars_table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_dataset_look_up",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DS_NASA_work"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "mars"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "icarodatafactory",
+	"location": "brazilsouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8cef2123-d93a-4d41-a486-d88ca0c2e664",
+		"tenantId": "3aec4f06-cc52-4bff-9872-ac441e5038de"
+	}
+}
