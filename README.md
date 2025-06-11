@@ -50,3 +50,10 @@ Este proyecto es ideal si estás aprendiendo sobre:
 - Integración entre servicios como ADF, Storage y SQL en un flujo funcional.
 
 ---
+### Conexión a API REST de la NASA, mediante APIKEY como parametro, sin activación de KEY_VAULT
+![image](https://github.com/user-attachments/assets/fea44fa1-fa69-4eac-bd3e-b60818c52b69)
+
+
+
+
+
