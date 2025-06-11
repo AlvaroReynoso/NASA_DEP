@@ -341,6 +341,30 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/DS_mars_table')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "sql_dataset_look_up",
+					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "DS_NASA_work"
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"schema": [],
+				"typeProperties": {
+					"schema": "dbo",
+					"table": "mars"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/sql_dataset_look_up')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/NASA_mars_info_csv')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -369,27 +393,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorage1')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/DS_mars_table')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "sql_dataset_look_up",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "AzureSqlTable",
-				"schema": [],
-				"typeProperties": {
-					"schema": "mars",
-					"table": "mars_table"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/sql_dataset_look_up')]"
 			]
 		},
 		{
@@ -482,6 +485,12 @@
 								"dependencyConditions": [
 									"Succeeded"
 								]
+							},
+							{
+								"activity": "set_sql_table_name",
+								"dependencyConditions": [
+									"Succeeded"
+								]
 							}
 						],
 						"policy": {
@@ -508,6 +517,10 @@
 							},
 							"sink": {
 								"type": "AzureSqlSink",
+								"preCopyScript": {
+									"value": "@pipeline().parameters.dbo_name",
+									"type": "Expression"
+								},
 								"writeBehavior": "insert",
 								"sqlWriterUseTableLock": false,
 								"tableOption": "autoCreate",
@@ -537,10 +550,37 @@
 								"parameters": {}
 							}
 						]
+					},
+					{
+						"name": "set_sql_table_name",
+						"type": "SetVariable",
+						"dependsOn": [],
+						"policy": {
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"variableName": "dbo.name",
+							"value": {
+								"value": "@pipeline().parameters.dbo_name",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"parameters": {
+					"dbo_name": {
+						"type": "string"
+					}
+				},
+				"variables": {
+					"dbo.name": {
+						"type": "String"
+					}
 				},
 				"annotations": []
 			},
