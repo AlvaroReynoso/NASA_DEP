@@ -24,6 +24,7 @@ Algunos de los datos que vas a encontrar:
 - Presión atmosférica.
 - Velocidad del viento.
 - Temperatura en el aire
+- Promedio de velocidad del viento
 - Dirección del viento en grados
 - Fecha terrestre del registro.
 
