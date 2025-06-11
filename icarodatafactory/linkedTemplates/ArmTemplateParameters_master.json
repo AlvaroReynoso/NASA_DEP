@@ -1,0 +1,84 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "icarodatafactory"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"LS__SQL_SalesDB_password": {
+			"value": ""
+		},
+		"LS_databricks_accessToken": {
+			"value": ""
+		},
+		"RestService2_password": {
+			"value": ""
+		},
+		"clase5_ejemplo_password": {
+			"value": ""
+		},
+		"sql_dataset_look_up_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://myicaroworkspace.dfs.core.windows.net/"
+		},
+		"LS_API_key_vault_properties_typeProperties_url": {
+			"value": "https://api.nasa.gov/insight_weather/?api_key=@linkedService().apikey&feedtype=json&ver=1.0\n"
+		},
+		"LS_KEYVAULT_properties_typeProperties_baseUrl": {
+			"value": "https://migrupodellaves.vault.azure.net/"
+		},
+		"LS__SQL_SalesDB_properties_typeProperties_server": {
+			"value": "mi-servidor-sql-bocha.database.windows.net"
+		},
+		"LS__SQL_SalesDB_properties_typeProperties_database": {
+			"value": "miBaseDeDatos"
+		},
+		"LS__SQL_SalesDB_properties_typeProperties_userName": {
+			"value": "usuarioazure"
+		},
+		"LS_databricks_properties_typeProperties_existingClusterId": {
+			"value": "0610-223445-3o9i9sfr"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://pokeapi.co/api/v2/"
+		},
+		"RestService2_properties_typeProperties_url": {
+			"value": "https://api.bcra.gob.ar/centraldeudores/v1.0/Deudas/ChequesRechazados"
+		},
+		"RestService2_properties_typeProperties_userName": {
+			"value": "usuarioazure"
+		},
+		"clase5_ejemplo_properties_typeProperties_server": {
+			"value": "mi-servidor-sql-bocha.database.windows.net"
+		},
+		"clase5_ejemplo_properties_typeProperties_database": {
+			"value": "miBaseDeDatos"
+		},
+		"clase5_ejemplo_properties_typeProperties_userName": {
+			"value": "usuarioazure"
+		},
+		"sql_dataset_look_up_properties_typeProperties_server": {
+			"value": "mi-servidor-sql-bocha.database.windows.net"
+		},
+		"sql_dataset_look_up_properties_typeProperties_database": {
+			"value": "miBaseDeDatos"
+		},
+		"sql_dataset_look_up_properties_typeProperties_userName": {
+			"value": "usuarioazure"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}

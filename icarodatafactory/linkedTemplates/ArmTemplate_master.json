@@ -1,0 +1,203 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "icarodatafactory"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
+		"LS__SQL_SalesDB_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS__SQL_SalesDB'"
+		},
+		"LS_databricks_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'LS_databricks'"
+		},
+		"RestService2_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'RestService2'"
+		},
+		"clase5_ejemplo_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'clase5_ejemplo'"
+		},
+		"sql_dataset_look_up_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'sql_dataset_look_up'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://myicaroworkspace.dfs.core.windows.net/"
+		},
+		"LS_API_key_vault_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://api.nasa.gov/insight_weather/?api_key=@linkedService().apikey&feedtype=json&ver=1.0\n"
+		},
+		"LS_KEYVAULT_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://migrupodellaves.vault.azure.net/"
+		},
+		"LS__SQL_SalesDB_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "mi-servidor-sql-bocha.database.windows.net"
+		},
+		"LS__SQL_SalesDB_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "miBaseDeDatos"
+		},
+		"LS__SQL_SalesDB_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "usuarioazure"
+		},
+		"LS_databricks_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0610-223445-3o9i9sfr"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://pokeapi.co/api/v2/"
+		},
+		"RestService2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://api.bcra.gob.ar/centraldeudores/v1.0/Deudas/ChequesRechazados"
+		},
+		"RestService2_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "usuarioazure"
+		},
+		"clase5_ejemplo_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "mi-servidor-sql-bocha.database.windows.net"
+		},
+		"clase5_ejemplo_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "miBaseDeDatos"
+		},
+		"clase5_ejemplo_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "usuarioazure"
+		},
+		"sql_dataset_look_up_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "mi-servidor-sql-bocha.database.windows.net"
+		},
+		"sql_dataset_look_up_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "miBaseDeDatos"
+		},
+		"sql_dataset_look_up_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "usuarioazure"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "icarodatafactory_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"LS__SQL_SalesDB_password": {
+						"value": "[parameters('LS__SQL_SalesDB_password')]"
+					},
+					"LS_databricks_accessToken": {
+						"value": "[parameters('LS_databricks_accessToken')]"
+					},
+					"RestService2_password": {
+						"value": "[parameters('RestService2_password')]"
+					},
+					"clase5_ejemplo_password": {
+						"value": "[parameters('clase5_ejemplo_password')]"
+					},
+					"sql_dataset_look_up_password": {
+						"value": "[parameters('sql_dataset_look_up_password')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"LS_API_key_vault_properties_typeProperties_url": {
+						"value": "[parameters('LS_API_key_vault_properties_typeProperties_url')]"
+					},
+					"LS_KEYVAULT_properties_typeProperties_baseUrl": {
+						"value": "[parameters('LS_KEYVAULT_properties_typeProperties_baseUrl')]"
+					},
+					"LS__SQL_SalesDB_properties_typeProperties_server": {
+						"value": "[parameters('LS__SQL_SalesDB_properties_typeProperties_server')]"
+					},
+					"LS__SQL_SalesDB_properties_typeProperties_database": {
+						"value": "[parameters('LS__SQL_SalesDB_properties_typeProperties_database')]"
+					},
+					"LS__SQL_SalesDB_properties_typeProperties_userName": {
+						"value": "[parameters('LS__SQL_SalesDB_properties_typeProperties_userName')]"
+					},
+					"LS_databricks_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('LS_databricks_properties_typeProperties_existingClusterId')]"
+					},
+					"RestService1_properties_typeProperties_url": {
+						"value": "[parameters('RestService1_properties_typeProperties_url')]"
+					},
+					"RestService2_properties_typeProperties_url": {
+						"value": "[parameters('RestService2_properties_typeProperties_url')]"
+					},
+					"RestService2_properties_typeProperties_userName": {
+						"value": "[parameters('RestService2_properties_typeProperties_userName')]"
+					},
+					"clase5_ejemplo_properties_typeProperties_server": {
+						"value": "[parameters('clase5_ejemplo_properties_typeProperties_server')]"
+					},
+					"clase5_ejemplo_properties_typeProperties_database": {
+						"value": "[parameters('clase5_ejemplo_properties_typeProperties_database')]"
+					},
+					"clase5_ejemplo_properties_typeProperties_userName": {
+						"value": "[parameters('clase5_ejemplo_properties_typeProperties_userName')]"
+					},
+					"sql_dataset_look_up_properties_typeProperties_server": {
+						"value": "[parameters('sql_dataset_look_up_properties_typeProperties_server')]"
+					},
+					"sql_dataset_look_up_properties_typeProperties_database": {
+						"value": "[parameters('sql_dataset_look_up_properties_typeProperties_database')]"
+					},
+					"sql_dataset_look_up_properties_typeProperties_userName": {
+						"value": "[parameters('sql_dataset_look_up_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
