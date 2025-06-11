@@ -5,12 +5,15 @@
 			"referenceName": "sql_dataset_look_up",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "DS_NASA_work"
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
 			"schema": "mars",
-			"table": "mars_table"
+			"table": ""
 		}
 	}
 }
