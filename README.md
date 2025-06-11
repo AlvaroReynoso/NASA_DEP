@@ -50,8 +50,25 @@ Este proyecto es ideal si estás aprendiendo sobre:
 - Integración entre servicios como ADF, Storage y SQL en un flujo funcional.
 
 ---
-### Conexión a API REST de la NASA, mediante APIKEY como parametro, sin activación de KEY_VAULT
-![image](https://github.com/user-attachments/assets/fea44fa1-fa69-4eac-bd3e-b60818c52b69)
+
+## Capturas
+
+#### Conexión a API REST de la NASA, mediante APIKEY como parametro, sin activación de KEY_VAULT
+![454132982-fea44fa1-fa69-4eac-bd3e-b60818c52b69](https://github.com/user-attachments/assets/df5240f2-87f3-4b4a-bbb5-b030d530db58)
+
+#### Conexión Sink a archivo JSON raw en ADLS 
+![AA](https://github.com/user-attachments/assets/b5615ecc-15b8-4c25-8922-b9ac5847691c)
+
+### Parte de codigo PySpark para limpiar, trasnformar la ingesta de JSON raw y crear archivos parquet y CSV en ADLS limpios
+![aaAa](https://github.com/user-attachments/assets/29b517c9-59c1-462d-aa6b-8c7c49d7c744)
+
+### Copiar data de CSV a nueva tabla SQL en ASQLDB mediante dataset conectado a recurso SQL
+![SDWQ](https://github.com/user-attachments/assets/f06528b3-beac-4018-9346-ae9855b128d4)
+
+### Consulta simple para corroborar creacion y ingesta de datos desde CSV a SQL
+![SQLaa](https://github.com/user-attachments/assets/d0c6686b-9a5d-4260-9837-8b6782ce6143)
+
+
 
 
 
