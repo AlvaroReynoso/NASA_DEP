@@ -12,8 +12,8 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "dbo",
-			"table": "mars"
+			"schema": "[dbo].[mars]",
+			"table": ""
 		}
 	}
 }
