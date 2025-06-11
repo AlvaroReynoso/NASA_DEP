@@ -49,7 +49,7 @@
 				]
 			},
 			{
-				"name": "Transform, clean JSON and create CSV file",
+				"name": "Transform_Clean_JSON_Create_CSV_File",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
@@ -80,7 +80,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Transform, clean JSON and create CSV file",
+						"activity": "Transform_Clean_JSON_Create_CSV_File",
 						"dependencyConditions": [
 							"Succeeded"
 						]
