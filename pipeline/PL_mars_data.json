@@ -68,21 +68,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/alvaroreynoso1997@hotmail.com/Nasa_JSON_transform",
-					"baseParameters": {
-						"input_path": {
-							"value": "@pipeline().parameters.input_path",
-							"type": "Expression"
-						},
-						"csv_output_path": {
-							"value": "@pipeline().parameters.csv_output_path",
-							"type": "Expression"
-						},
-						"delta_output_path": {
-							"value": "@pipeline().parameters.delta_output_path",
-							"type": "Expression"
-						}
-					}
+					"notebookPath": "/Users/alvaroreynoso1997@hotmail.com/Nasa_JSON_transform"
 				},
 				"linkedServiceName": {
 					"referenceName": "LS_databricks",
@@ -109,21 +95,50 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableStaging": false
-				}
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"wildcardFolderPath": "processed/mars_weather_clean_final_csv",
+							"wildcardFileName": "*",
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "NASA_mars_info_csv",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_mars_table",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
-		"parameters": {
-			"input_path": {
-				"type": "string"
-			},
-			"csv_output_path": {
-				"type": "string"
-			},
-			"delta_output_path": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }

@@ -1,0 +1,12 @@
+{
+	"name": "DS_mars_table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_dataset_look_up",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
