@@ -84,12 +84,6 @@
 						"dependencyConditions": [
 							"Succeeded"
 						]
-					},
-					{
-						"activity": "set_sql_table_name",
-						"dependencyConditions": [
-							"Succeeded"
-						]
 					}
 				],
 				"policy": {
@@ -118,10 +112,6 @@
 						"type": "AzureSqlSink",
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false,
-						"tableOption": {
-							"value": "'mars_database'",
-							"type": "Expression"
-						},
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
@@ -146,23 +136,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "set_sql_table_name",
-				"type": "SetVariable",
-				"dependsOn": [],
-				"policy": {
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "dbo.name",
-					"value": {
-						"value": "@pipeline().parameters.dbo_name",
-						"type": "Expression"
-					}
-				}
 			}
 		],
 		"annotations": []
