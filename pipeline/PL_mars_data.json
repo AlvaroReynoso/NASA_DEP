@@ -84,6 +84,12 @@
 						"dependencyConditions": [
 							"Succeeded"
 						]
+					},
+					{
+						"activity": "set_sql_table_name",
+						"dependencyConditions": [
+							"Succeeded"
+						]
 					}
 				],
 				"policy": {
@@ -110,6 +116,10 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
+						"preCopyScript": {
+							"value": "@pipeline().parameters.dbo_name",
+							"type": "Expression"
+						},
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false,
 						"tableOption": "autoCreate",
@@ -137,8 +147,30 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "set_sql_table_name",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "dbo_name",
+					"value": {
+						"value": "@pipeline().parameters.dbo_name",
+						"type": "Expression"
+					}
+				}
 			}
 		],
+		"parameters": {
+			"dbo_name": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
