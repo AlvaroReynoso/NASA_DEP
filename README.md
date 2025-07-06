@@ -1,4 +1,4 @@
-![Screenshot_1](https://github.com/user-attachments/assets/b499f2d6-3a1e-483d-8aea-d603e8a4034e)# ☄️ Pipeline de Datos de Marte con Azure Data Factory
+# ☄️ Pipeline de Datos de Marte con Azure Data Factory
 
 Este repositorio contiene un pequeño proyecto de ingeniería de datos en el que armo un pipeline con **Azure Data Factory** para traer información sobre el clima en **Marte**, obtenida desde una API pública de la **NASA**.
 
