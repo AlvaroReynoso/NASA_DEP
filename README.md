@@ -1,4 +1,4 @@
-# ☄️ Pipeline de Datos de Marte con Azure Data Factory
+![Screenshot_1](https://github.com/user-attachments/assets/b499f2d6-3a1e-483d-8aea-d603e8a4034e)# ☄️ Pipeline de Datos de Marte con Azure Data Factory
 
 Este repositorio contiene un pequeño proyecto de ingeniería de datos en el que armo un pipeline con **Azure Data Factory** para traer información sobre el clima en **Marte**, obtenida desde una API pública de la **NASA**.
 
@@ -53,6 +53,9 @@ Este proyecto es ideal si estás aprendiendo sobre:
 
 ## Capturas
 
+#### JSON crudo (raw) inicial ingestado desde la API de NASA Company
+![Screenshot_1](https://github.com/user-attachments/assets/bb48f852-47db-44ed-b4c1-09ba526f1789)
+
 #### Conexión a API REST de la NASA, mediante APIKEY como parametro, sin activación de KEY_VAULT
 ![454132982-fea44fa1-fa69-4eac-bd3e-b60818c52b69](https://github.com/user-attachments/assets/df5240f2-87f3-4b4a-bbb5-b030d530db58)
 
@@ -65,7 +68,7 @@ Este proyecto es ideal si estás aprendiendo sobre:
 ### Copiar data de CSV a nueva tabla SQL en ASQLDB mediante dataset conectado a recurso SQL
 ![SDWQ](https://github.com/user-attachments/assets/f06528b3-beac-4018-9346-ae9855b128d4)
 
-### Consulta simple para corroborar creacion y ingesta de datos desde CSV a SQL
+### (Final) Consulta simple para corroborar creacion, transformación de datos e ingesta desde CSV a SQL
 ![SQLaa](https://github.com/user-attachments/assets/d0c6686b-9a5d-4260-9837-8b6782ce6143)
 
 
