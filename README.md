@@ -53,7 +53,7 @@ Este proyecto es ideal si estás aprendiendo sobre:
 
 ## Capturas
 
-#### JSON crudo (raw) inicial ingestado desde la API de NASA Company
+#### JSON crudo (raw) inicial ingestado desde la API de NASA Company (Problema: Doble objeto dentro del dia, no se puede ingestar directamente, da malos resultados por dia marciano)
 ![Screenshot_1](https://github.com/user-attachments/assets/bb48f852-47db-44ed-b4c1-09ba526f1789)
 
 #### Conexión a API REST de la NASA, mediante APIKEY como parametro, sin activación de KEY_VAULT
